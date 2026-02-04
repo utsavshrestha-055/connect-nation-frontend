@@ -14,22 +14,51 @@
       </div>
 
       <!-- Clients -->
-      <div class="w-full overflow-hidden ">
-        <div
+      <div class="w-full overflow-hidden">
+        <!-- <div
           ref="carousel"
-          class="flex gap-5  overflow-x-auto scroll-smooth scrollbar-hide"
+          class="flex gap-5 overflow-x-auto scroll-smooth scrollbar-hide"
           @mouseenter="pause = true"
           @mouseleave="pause = false"
         >
           <div
             v-for="(client, i) in duplicatedClients"
             :key="i"
-            class="flex cursor-pointer items-center justify-center rounded-[5px] bg-white transition-shadow hover:shadow-2xl"
+            class="flex cursor-pointer items-center justify-center rounded-[5px] bg-white transition-shadow hover:shadow-2xl p-10"
           >
             <img
               :src="client.src"
               :alt="client.alt"
-              class="object-contain p-[40px] min-w-[200px]"
+              class="w-[200px] h-[186px] object-cover"
+            />
+          </div>
+        </div> -->
+        <div
+          ref="carousel"
+          class="flex gap-5 overflow-x-auto scroll-smooth scrollbar-hide"
+          @mouseenter="pause = true"
+          @mouseleave="pause = false"
+        >
+          <div
+            v-for="(client, i) in duplicatedClients"
+            :key="i"
+            style="
+              width: 276px;
+              height: 198px;
+              angle: 0 deg;
+              opacity: 1;
+              border-radius: 4.78px;
+              padding-top: 47px;
+              padding-right: 47.79px;
+              padding-bottom: 47px;
+              padding-left: 47.79px;
+            "
+            class="flex cursor-pointer items-center justify-center rounded-[5px] bg-white transition-shadow hover:shadow-2xl flex-none"
+          >
+            <img
+              :src="client.src"
+              :alt="client.alt"
+              class="w-full h-full object-contain"
             />
           </div>
         </div>
@@ -47,7 +76,7 @@ import Achievers from "../../../assets/img/logo/clients/achievers.svg";
 import Mcquel from "../../../assets/img/logo/clients/mcquel.svg";
 import Danphe from "../../../assets/img/logo/clients/danphe.svg";
 import Royalhealth from "../../../assets/img/logo/clients/royalhealth.svg";
-import Harcourt from "../../../assets/img/logo/clients/harcourt.jpg";
+import Harcourt from "../../../assets/img/logo/clients/harcourt.jpeg";
 import Vital from "../../../assets/img/logo/clients/vital-care.png";
 import Bhoye from "../../../assets/img/logo/clients/bhoye.png";
 import Events from "../../../assets/img/logo/clients/events.png";

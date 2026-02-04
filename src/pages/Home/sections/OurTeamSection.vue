@@ -68,11 +68,11 @@
           <img
             :src="member.image"
             alt="Team Member"
-            class="absolute left-1/2 -translate-x-1/2 bottom-0 min-w-full object-cover transition-all duration-700 ease-in-out"
+            class="absolute top-[40%] sm:top-[20%] md:top-[22%] left-1/2 -translate-x-1/2  bottom-0 min-w-full object-cover transition-all duration-700 ease-in-out"
             :class="[
               activeIndex === index
-                ? 'top-[0%] filter grayscale-0 saturate-100'
-                : 'top-[35%] h-full filter grayscale',
+                ? ' filter scale-190 sm:scale-120 lg:top-[0%] grayscale-0 saturate-100'
+                : ' h-full filter grayscale translate-y-[6%]',
             ]"
           />
         </div>
@@ -108,7 +108,7 @@ const team = [
   },
   { name: "Rohit Rajput", role: "IT Analyst", image: member3 },
   { name: "Narayan Oli", role: "Marketing Officer", image: member5 },
-  { name: "Rupesh Dahal", role: "Web Developer", image: member7 },
+  { name: "Sanjib Zimba", role: "CFO", image: member7 },
 ];
 
 const visibleTeam = ref(team); // show all items, scrolling handles visibility

@@ -104,12 +104,12 @@
         </div>
         <!-- Left gradient fade -->
         <div
-          class="pointer-events-none absolute left-0 top-0 h-full w-20 sm:w-28 lg:w-35 xl:w-55 bg-gradient-to-r from-white via-white/80 to-transparent z-20"
+          class="pointer-events-none absolute left-0 top-0 h-full w-[0px] sm:w-28 lg:w-35 xl:w-55 bg-gradient-to-r from-white via-white/80 to-transparent z-20"
         ></div>
 
         <!-- Right gradient fade -->
         <div
-          class="pointer-events-none absolute right-0 top-0 h-full w-20 sm:w-28 lg:w-35 xl:w-55 bg-gradient-to-l from-white via-white/80 to-transparent z-20"
+          class="pointer-events-none absolute right-0 top-0 h-full w-[0px] sm:w-28 lg:w-35 xl:w-55 bg-gradient-to-l from-white via-white/80 to-transparent z-20"
         ></div>
       </div>
 

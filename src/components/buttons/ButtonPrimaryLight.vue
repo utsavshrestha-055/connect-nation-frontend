@@ -1,7 +1,7 @@
 <template>
   <button
-    :type="props.to ? 'button' : 'submit'"
-    @click="props.to && navigate()"
+    :type="props.to === '/submit' ? 'submit' : 'button'"
+    @click="props.to !== '/submit' && navigate()"
     class="button-primary button-primary-light"
   >
     <span>{{ label }}</span>

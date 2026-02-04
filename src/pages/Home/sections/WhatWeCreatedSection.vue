@@ -143,7 +143,9 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
         class="h-full grid grid-cols-1 sm:grid-cols-2 md:rounded-[40px] border border-gray-100 overflow-hidden transition-all duration-700"
         :style="card.gradient"
       >
-        <div class="relative flex items-center justify-center max-w-[710px] scale-90 lg:scale-100">
+        <div
+          class="relative flex items-center justify-center max-w-[710px] scale-90 lg:scale-100"
+        >
           <div class="relative z-10">
             <img
               :src="card.desktopImg"
@@ -193,11 +195,11 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
             </p>
           </div>
 
-          <ButtonSectionSecondaryDark
+          <!-- <ButtonSectionSecondaryDark
             label="View Project"
             :to="card.link"
             :external="card.external"
-          />
+          /> -->
         </div>
       </div>
     </div>
